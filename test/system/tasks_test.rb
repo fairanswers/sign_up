@@ -16,7 +16,7 @@ class TasksTest < ApplicationSystemTestCase
 
     fill_in "Event", with: @task.event_id
     fill_in "Taken", with: @task.taken
-    fill_in "Title,", with: @task.title,
+    fill_in "Title,", with: @task.title
     click_on "Create Task"
 
     assert_text "Task was successfully created"
