@@ -15,5 +15,19 @@
   <%= @event.location %>
 </p>
 
+<p>
+  <strong>Start Time:</strong>
+  <%= @event.start_time %>
+</p>
+
+<p>
+  Task List:
+  <ul>
+    <%for task in @event.tasks %>
+      <%=task.title%><br />
+    <%end %>
+  </ul>
+</p>
+
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
