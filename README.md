@@ -16,6 +16,13 @@ Emails didn't work until I enabled less secure apps for gmail, instructions here
 
 Tests didn't work until I included devise helpers in the test class: include Devise::Test::IntegrationHelpers
 
+Found a bug in rails.  When creating the tasks, I accidentally put a comma at the end of a variable name.  Rails thought title, was a fine name, and sprinkled references to it all throughout the app.  Sometimes it would work, and sometimes it would not. 
+
+New Features:
+* Events can show tasks under them.  I want to move task display to a partial
 
 Next Steps:
-* Adding event allows you to create tasks underneath it.
+* Editing event allows you to add/edit tasks.
+* Seed db with a coupld of users and events.
+* Better time picker
+
